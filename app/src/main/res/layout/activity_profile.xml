@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Ligne avec < à gauche et Profile centré -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnBackProfile"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:text="&lt;"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#10233D"
+                android:background="@android:color/transparent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:elevation="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="#10233D"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Information"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#10233D" />
+
+            <TextView
+                android:id="@+id/txtProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:layout_marginTop="14dp" />
+
+            <TextView
+                android:id="@+id/txtProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtProfilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- 4 icônes côte à côte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageButton
+                android:id="@+id/btnProfileMap"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_location"
+                android:background="#E8F4FD"
+                android:tint="#0057B8"
+                android:contentDescription="Store Location" />
+
+            <ImageButton
+                android:id="@+id/btnProfilePhone"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_phone"
+                android:background="#E8FDF0"
+                android:tint="#00A86B"
+                android:contentDescription="Phone" />
+
+            <ImageButton
+                android:id="@+id/btnProfileFacebook"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_facebook"
+                android:background="#E7F0FD"
+                android:tint="#1877F2"
+                android:contentDescription="Facebook" />
+
+            <ImageButton
+                android:id="@+id/btnProfileInstagram"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_instagram"
+                android:background="#FDE8F5"
+                android:tint="#C13584"
+                android:contentDescription="Instagram" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogoutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sign Out"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#D62828"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="28dp" />
+
+    </LinearLayout>
+
+</ScrollView>

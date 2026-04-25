@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="50dp"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:paddingBottom="28dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logu"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#10233D"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order has been placed successfully."
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Back to Home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#0057B8"
+        android:layout_marginTop="34dp" />
+
+</LinearLayout>

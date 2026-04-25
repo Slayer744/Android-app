@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FAFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detailBottomBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="#EAF4FF">
+
+                <!-- Bouton < à la place de l'icône précédente -->
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:text="&lt;"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#10233D"
+                    android:backgroundTint="#FFFFFF" />
+
+                <!-- btnFavoriteDetail SUPPRIMÉ -->
+
+                <ImageView
+                    android:id="@+id/imgDetailProduct"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_launcher" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtDetailCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:background="#D9EEFF"
+                    android:textColor="#0057B8"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Product Name"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#10233D" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@android:drawable/btn_star_big_on" />
+
+                        <TextView
+                            android:id="@+id/txtDetailRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="4.5"
+                            android:textSize="18sp"
+                            android:textColor="#444444" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtDetailPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="0 DA"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#00A86B" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#10233D" />
+
+                <TextView
+                    android:id="@+id/txtDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Description here"
+                    android:textSize="18sp"
+                    android:textColor="#4E5D6C"
+                    android:lineSpacingExtra="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="Quantity"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#10233D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/btnMinusDetail"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="-"
+                        android:textSize="24sp"
+                        android:textColor="#0057B8"
+                        android:backgroundTint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/txtQuantityDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:text="1"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#10233D" />
+
+                    <Button
+                        android:id="@+id/btnPlusDetail"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="+"
+                        android:textSize="22sp"
+                        android:textColor="#00A86B"
+                        android:backgroundTint="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/detailBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Add to Cart"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0057B8" />
+
+</RelativeLayout>

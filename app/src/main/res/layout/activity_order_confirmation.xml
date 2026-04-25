@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Confirmation"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#10233D"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#10233D"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:id="@+id/orderSummaryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DADADA"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#10233D" />
+
+            <TextView
+                android:id="@+id/txtOrderTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 DA"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#00A86B" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Contact"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#10233D"
+            android:layout_marginTop="34dp" />
+
+        <!-- 4 icônes côte à côte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/btnOpenMap"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_location"
+                android:background="#E8F4FD"
+                android:tint="#0057B8"
+                android:contentDescription="Store Location" />
+
+            <ImageButton
+                android:id="@+id/btnOpenPhone"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_phone"
+                android:background="#E8FDF0"
+                android:tint="#00A86B"
+                android:contentDescription="Phone" />
+
+            <ImageButton
+                android:id="@+id/btnOpenFacebook"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_facebook"
+                android:background="#E7F0FD"
+                android:tint="#1877F2"
+                android:contentDescription="Facebook" />
+
+            <ImageButton
+                android:id="@+id/btnOpenInstagram"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_instagram"
+                android:background="#FDE8F5"
+                android:tint="#C13584"
+                android:contentDescription="Instagram" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Confirm Order"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#00A86B"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
